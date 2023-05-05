@@ -1,0 +1,59 @@
+body{
+    background: url(thyroid.jpg);
+    background-repeat: no-repeat;
+    background-position: 350px 120px;
+    
+}
+h1{
+    background-color: darkorchid;
+    font-size: 60px;
+    color: burlywood;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 10px;
+    height: 90px;
+}
+form{
+    background-color: transparent;
+    margin-left: 340px;
+    width: 615px;
+    height: 370px;
+}
+td{
+    font-size: 24px;
+    text-align: left;
+    padding: 2px;
+}
+#a{
+    width: 700px;
+    height: 70px;
+    margin-left: -190px;
+    border: 2px solid red;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: red;
+    background-color: yellow;
+}
+#a:hover{
+    background-color: red;
+    color: yellow;
+    border: 2px solid black;
+    cursor: pointer;
+}
+input{
+    width: 350px;
+    margin-left: 90px;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+marquee{
+    color: black;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 90px;
+}

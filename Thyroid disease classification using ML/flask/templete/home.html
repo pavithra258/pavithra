@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Thyroid Disease Prediction</title>
+      <img src="{{url_for('static',filename='thyroid.jpg')}}">
+      <style>
+         body {
+                     margin-top: 0;
+                     background-color: azure;
+                  }
+                  img {
+                     position: absolute;
+                     z-index: -1;
+                     margin-left: 360px;
+                     margin-top: 200px;
+                     border-radius: 3000px;
+                     box-shadow: 5px -5px 10px black;
+                  }
+                  form {
+                     border: 2px solid black;
+                     margin-left: 170px;
+                     width: 1000px;
+                     height: 600px;
+                     background-color: transparent;
+                     box-shadow: 50px -50px 1000px black;
+                     padding-top: 20px;
+                  }
+                  label
+                  {
+                     font-size: 22px;
+                     text-align: left;
+                     padding: 1px;
+                     margin-left: 40px;
+                     margin-top: 20px;
+                  }
+                  #a {
+                     width: 910px;
+                     height: 70px;
+                     margin-left: -190px;
+                     border: 2px solid red;
+                     text-align: center;
+                     font-size: 40px;
+                     font-family: 'Times New Roman', Times, serif;
+                     font-weight: bolder;
+                     color: red;
+                     background-color: yellow;
+                  }
+                  #a:hover {
+                     background-color: red;
+                     color: yellow;
+                     border: 2px solid black;
+                     cursor: pointer;
+                  }
+                  input {
+                     width: 350px;
+                     margin-top: 10px;
+                     margin-right: 40px;
+                     height: 25px;
+                     background-color: transparent;
+                     float: right;
+                     border-radius: 5px;
+                     box-shadow: 1px -1px 5px black;
+                     border-bottom: 1px solid black;
+                  }
+                  h1 {
+                     position: relative;
+                     background-color: darkorchid;
+                     font-size: 60px;
+                     color: burlywood;
+                     text-align: center;
+                     text-decoration: underline;
+                     margin-top: 10px;
+                     height: 90px;
+                  }
+                  marquee {
+                     color: black;
+                     font-size: 30px;
+                     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                     margin-top: 90px;
+                  }
+         
+               </style>
+   </head>
+   <body>
+      <h1>Welcome to Thyroid Disease Prediction</h1>
+	<form action="{{ url_for('predict') }}" method="post">
+      	<label for="goitre">Goitre</label>
+		<input type="number" step="0.01" id="goitre" name="goitre" required><br><br>
+		<label for="tumor">Tumor</label>
+		<input type="number" step="0.01" id="tumor" name="tumor" required><br><br>
+		<label for="hypopituitary">Hypopituitary</label>
+		<input type="number" step="0.01" id="hypopituitary" name="hypopituitary" required><br><br>
+		<label for="psych">Psych</label>
+		<input type="number" step="0.01" id="psych" name="psych" required><br><br>
+		<label for="TSH">TSH</label>
+		<input type="number" step="0.01" id="TSH" name="TSH" required><br><br>
+		<label for="T3">T3</label>
+		<input type="number" step="0.01" id="T3" name="T3" required><br><br>
+		<label for="TT4">TT4</label>
+		<input type="number" step="0.01" id="TT4" name="TT4" required><br><br>
+		<label for="T4U">T4U</label>
+		<input type="number" step="0.01" id="T4U" name="T4U" required><br><br>
+		<label for="FTI">FTI</label>
+		<input type="number" step="0.01" id="FTI" name="FTI" required><br><br>
+		<label for="TBG">TBG</label>
+		<input type="number" step="0.01" id="TBG" name="TBG" required><br><br>
+		<input type="submit" id="a" value="Predict">
+	</form>
+</body>
+</html>
+      </form>
+      <marquee>The Tyroid Disease Prediction Project Was Devolperd By Esakkiammal & Squad</marquee>
+   </body>
+</html>
